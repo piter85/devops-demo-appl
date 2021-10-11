@@ -64,7 +64,7 @@ $conn->close(); ?>
         <div class="cover-container">
 
             <div class="inner cover">
-                <h1 class="cover-heading">A fregna e nonneta!</h1>
+                <h1 class="cover-heading">A fregna e nonneta e chella e zieta!</h1>
                 <p class="lead"><i>This app is used for demonstrating and testing various DevOps, CI, and CD concepts.</i></p>
                 <h3>Connection to MySQL DB:
                     <?php
