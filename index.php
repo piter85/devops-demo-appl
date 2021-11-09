@@ -7,7 +7,7 @@ $dbSuccess = false;
 $dbVersion = false;
 
 // Connect to SQL Server
-$conn = @new mysqli($config['db'], $config['user'], $config['pass'], $config['database']);
+$conn = @new mysqli($config['demo-db'], $config['user'], $config['pass'], $config['demodb']);
 
 if ($conn->connect_errno) {
 }
