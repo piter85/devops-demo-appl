@@ -7,7 +7,7 @@ $dbSuccess = false;
 $dbVersion = false;
 
 // Connect to SQL Server
-$conn = @new mysqli($config['demo-db'], $config['user'], $config['pass'], $config['demodb']);
+$conn = @new mysqli($config['hostname'], $config['username'], $config['password'], $config['dbname']);
 
 if ($conn->connect_errno) {
 }
@@ -74,7 +74,7 @@ $conn->close(); ?>
                     </span>
                 </h3>
                 <h3>Environment: <span class="label label-info"><?php echo $config['environment'] ?></span></h3>
-                <h3>Application Version: <span class="label label-info">2.0</span></h3>
+                <h3>Application Version: <span class="label label-info">2.1</span></h3>
                 <h3>Database Scripts Version: <?php
                         if ($dbVersion) {echo '<span class="label label-info">'. $dbVersion;}
                         else {echo '<span class="label label-danger">Failed to load version data';}
